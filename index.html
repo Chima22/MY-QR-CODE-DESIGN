@@ -7,37 +7,46 @@
     <title>QR CODE</title>
 </head>
 <style>
-    /* main {
-    background: #d9d7d5;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-  } */
+   /* *{ */
+  /* margin: 0;
+  padding: 0; */
+  /* box-sizing: border-box; */
+/* } */
  
     body{
-        background-color: hsl(220, 15%, 55%);
-        margin-top: 50px;
-        margin-bottom: 50px;
+        /* background-color: hsl(220, 15%, 55%);*/
+         margin-top: 50px; 
+        margin-bottom: 50px; 
+      
+        font-family: "Outfit", sans-serif;
+         background-color: hsl(212, 45%, 89%);
+
     }
-    @media (max-width: 1440px) {
+    
     .section{
+      background-color: hsl(0, 0%, 100%); 
       margin-left: 25%;
-      margin-right: 25%;
-      background-color: hsl(0, 0%, 100%);
+      margin-right: 25%; 
+      padding-top: 25px;
+      padding-bottom: 25px; 
+      
     }
-     #img{
-        margin-top: 35px;
-        margin-bottom: 35px;
-        width: 600px;
-        height: 600px;
+     img{
+        width: 500px;
+        height: 500px;
         border-radius: 13px;
-     }
+         width:90%; 
+         /* height: 200px; */
+        /* object-fit: fill; */
+          border-radius: 10px;
+     } 
     div {
       display: grid;
       place-items: center;
       font-family:'Franklin Gothic Medium';
       font-weight: 400%;
       border-radius: 15px;
+     
     }
     h1{
         text-align: center;  
@@ -49,38 +58,23 @@
         text-justify:inter-word;
         color:hsl(218, 44%, 22%);
     }
-}
-
-    @media (max-width: 375px) {
-  div{
-    display: grid;
-    place-items: center;
-    width: 100%;
+    @media screen and (min-width: 375px) and (max-width: 1024px){
+    img {
+    max-width: 300px;
+    height:auto;
   }
-
-.section{
-    margin-left: 10px;
-    margin-right: 10px;
-    /* padding: 10px; */
-    
-}
-#img{
-    margin-left: 6px;
-    margin-right: 6px;
-    width: 300px;
-    height: auto;
-}
- body{
-    /* margin: 20px; */
+  .section{
     padding: 20px;
-    margin-left: 20px;
-    margin-right: 20px;
-}  
-}   
+  }
+}
+
+
+    
+  
 </style>
 <body>
     <div class="section">
-        <img id="img" src="image-qr-code.png" alt="QR CODE">
+        <img  src="./image/image-qr-code.png" alt="">
         <h1>Improve your front-end skills by building projects</h1>
         <p> Scan the QR code to visit Frontend Mentor <br> and take your codining skills to  the next level</p>
     </div>
